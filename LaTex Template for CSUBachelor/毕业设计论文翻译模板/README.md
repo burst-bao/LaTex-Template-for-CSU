@@ -1,23 +1,20 @@
-# LaTex-Template-for-CSU（非官方）
+# IEEE论文模板
 
-## 1.LaTex Template for CSUBachelor
+## 1.IEEE官方模板
 
-在武汉大学本科毕业论文模板的基础上，根据中南大学本科毕业论文的格式要求，进行删改，较为完美地实现了中南大学本科生毕业论文word模板中罗列的所有要求。 
+[IEEE官方模板下载链接](https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/)
 
-20200116_V2.0：进一步完美修改       中南大学	电气1705陈宝轩
+## 2.汉化版模板
 
-20210110_V3.1：精简模板       	中南大学	电气1705陈宝轩
+只是在原模板的.tex文件中中加入了以下内容：
 
-## 2.LaTex Template for CSULabReport_A3
+% 加入对中文的支持\
+\usepackage{ctex}			% 假如不需要中文，把这一行删了就行\
+\usepackage{graphicx} 		% 图形支持\
+%\RequirePackage{graphicx} 	% 图形\
+\graphicspath{{figures/}} 	% 修改图片文件路径\
+\usepackage{amsmath} 		% 公式支持\
+\usepackage{array} 			% 部分表格支持
 
-根据中南大学自动化学院实验报告的格式要求，制作而成。（未完待续） 
 
-## 3.LaTex Template for CSULabReport_A4
-
-根据中南大学自动化学院实验报告的格式要求，制作而成。（未完待续）
-
-# 其他模板：
-
-[上海交通大学：](https://github.com/sjtug/SJTUThesis.git)
-
-武汉大学：
+2021.2.15
